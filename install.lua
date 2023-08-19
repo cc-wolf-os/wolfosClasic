@@ -1,4 +1,13 @@
 local tos = [[WolfOS is not intended for use in any nuclear facility,on aircraft, or for automation]]
+if not fs.exists("bigfont.lua") then
+    shell.run("wget https://pastebin.com/raw/3LfWxRWh bigfont.lua")
+end
+if not fs.exists("pixelterm.lua") then
+    shell.run("wget https://gist.githubusercontent.com/EmeraldImpulse7/b2dd266b0345db52a56867b796cd8b79/raw/fd0967dc1d9c9bfd546492247d62e88eae140e66/pixelterm.lua")
+end
+if not fs.exists("pixelbox_lite.lua") then
+    shell.run("wget https://raw.githubusercontent.com/9551-Dev/apis/main/pixelbox_lite.lua")
+end
 if not fs.exists("prime.lua") then
     local components = {
         "borderBox",
@@ -61,7 +70,7 @@ local entries = {
     ["WolfOS-Desktop"] = false,
     ["WolfOS-Core"] = "R",
     ["WolfOS-Clasic"] = false,
-    ["Item 5"] = false
+    ["WolfOS-Shell"] = false
 }
 PrimeUI.checkSelectionBox(scroller, 1, 1, 40, 10, entries)
 PrimeUI.button(term.current(), 3, 18, "Next", "done")
@@ -86,4 +95,13 @@ if entries["WolfOS-Clasic"] then
     --TODO run wolfos clasic installer
 
     return 1
+elseif entries["WolfOS-Shell"] then
+    if fs.exists("cash.lua") then
+        fs.delete("cash.lua")
+        fs.delete(".cashrc")
+    end
+    shell.run("wget https://raw.githubusercontent.com/cc-wolf-os/cash/master/cash.lua")
+    shell.run("wget https://raw.githubusercontent.com/cc-wolf-os/cash/master/.cashrc")
 end
+fs.makeDir("/serv")
+shell.run("set motd.enable false")

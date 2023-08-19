@@ -1,2 +1,13 @@
 .settings
 prime.lua
+argparse.lua
+.cash_history
+.cashrc
+cash.lua
+bigfont.lua
+pixelterm.lua
+gemu.lua
+test
+testOut
+pixelbox_lite.lua
+test.dim
