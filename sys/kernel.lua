@@ -364,6 +364,8 @@ local w,h = term.getSize()
 local hW,hH = w/2,h/2
 local dl = 1/12
 
+package.path = package.path..";/lib/?;/lib/?.lua"
+
 for i = 1, 12, 1 do
     term.setCursorPos(hW,hH)
     loadingSpinner[(i%6)+1]:blit("f","0")

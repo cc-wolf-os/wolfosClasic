@@ -1,0 +1,22 @@
+[INFO] 12:09:14: Logger started! Version: 1.1
+[INFO] 12:09:14: Started process /sys/wm/bin/Services/ServiceWorker.lua
+[ERROR] 12:09:14: Process /sys/wm/bin/Services/ServiceWorker.lua ended: 
+[string "in ServiceWor..."]:7: attempt to call field 'getSystemLogger' (a nil value) stack traceback:
+	/sys/wm/bin/wm.lua:231: in function 'getSystemLogger'
+	[string "in ServiceWor..."]:7: in function 'f'
+	/sys/wm/bin/wm.lua:213: in function </sys/wm/bin/wm.lua:184>
+	[C]: in function 'xpcall'
+	/sys/wm/bin/wm.lua:184: in function </sys/wm/bin/wm.lua:179>
+[INFO] 12:09:14: Started process /sys/wm/bin/processStopped.lua
+[CRITICAL] 12:09:17: A critical error has occured, causing the window manager to crash.
+...s/lib/ui/scrollbox.lua:112: attempt to index upvalue 'debugger' (a nil value)
+stack traceback:
+	/sys/wm/bin/wm.lua:508: in function </sys/wm/bin/wm.lua:503>
+	...s/lib/ui/scrollbox.lua:112: in function 'blit'
+	...s/lib/ui/scrollbox.lua:152: in function 'write'
+	...anagerModules/Menu.lua:238: in function 'renderScrollbox'
+	...anagerModules/Menu.lua:434: in function 'fire'
+	/sys/wm/bin/wm.lua:424: in function </sys/wm/bin/wm.lua:33>
+	[C]: in function 'xpcall'
+	/sys/wm/bin/wm.lua:33: in main chunk
+[INFO] 12:09:17: Logs dumped to /crash-08-29-23_12-09-17.log

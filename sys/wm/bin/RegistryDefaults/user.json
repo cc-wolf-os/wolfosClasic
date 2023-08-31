@@ -1,0 +1,96 @@
+{
+  "folders": {
+    "Menu": {
+      "folders": {},
+      "values": {
+        "PinnedApps": {
+          "type": "table",
+          "value": "[{\"name\": \"Shell\", \"path\": \"/sys/bin/wolfSH.lua\"}, {\"name\": \"Lua\", \"path\": \"/rom/programs/lua.lua\"}]"
+        }
+      }
+    },
+    "Appearance": {
+      "folders": {
+        "Menu": {
+          "folders": {},
+          "values": {
+            "MenuBackground": { "type": "number", "value": "128" },
+            "MenuText": { "type": "number", "value": "1" },
+            "MenuFocusedBackground": { "type": "number", "value": "32768" },
+            "MenuFocusedText": { "type": "number", "value": "1" },
+
+            "ShutdownBackground": { "type": "number", "value": "16384" },
+            "ShutdownFocused": { "type": "number", "value": "64" },
+            "ShutdownText": { "type": "number", "value": "1" }
+          }
+        },
+        "Window": {
+          "folders": {},
+          "values": {
+            "WindowUnfocused": { "type": "number", "value": "8" },
+            "WindowFocused": { "type": "number", "value": "512" },
+            "ControlButton": { "type": "number", "value": "8" },
+            "CloseButton": { "type": "number", "value": "16384" },
+            "TitlebarText": { "type": "number", "value": "1" },
+            "ControlButtonText": { "type": "number", "value": "1" },
+            "CloseButtonText": { "type": "number", "value": "1" }
+          }
+        },
+        "Application": {
+          "folders": {},
+          "values": {
+            "ApplicationBackground": { "type": "number", "value": "1" },
+            "ApplicationText": { "type": "number", "value": "128" },
+            "ApplicationTextStrong": { "type": "number", "value": "32768" }
+          }
+        },
+        "ShutdownMenu": {
+          "folders": {},
+          "values": {
+            "ShutdownButton": { "type": "number", "value": "16384" },
+            "ShutdownButtonText": { "type": "number", "value": "64" },
+            "RebootButton": { "type": "number", "value": "2" },
+            "RebootButtonText": { "type": "number", "value": "16" }
+          }
+        },
+        "UserInterface": {
+          "folders": {
+            "Button": {
+              "folders": {},
+              "values": {
+                "Background": { "type": "number", "value": "256" },
+                "Text": { "type": "number", "value": "32768" },
+                "TextDisabled": { "type": "number", "value": "128" },
+                "Clicking": { "type": "number", "value": "128" },
+                "Focused": { "type": "number", "value": "8" }
+              }
+            },
+            "Input": {
+              "folders": {},
+              "values": {
+                "Background": { "type": "number", "value": "1" },
+                "Border": { "type": "number", "value": "256" },
+                "Focused": { "type": "number", "value": "8" },
+                "Text": { "type": "number", "value": "32768" },
+                "PlaceholderText": { "type": "number", "value": "256" },
+                "DisabledText": { "type": "number", "value": "256" }
+              }
+            }
+          },
+          "values": {}
+        }
+      },
+      "values": {
+        "DesktopBackgroundColor": { "type": "number", "value": "256" }
+      }
+    }
+  },
+  "values": {
+    "UserName": { "type": "string", "value": "User" },
+    "RegistryVersion": {
+      "type": "number",
+      "value": "2",
+      "overrideOnUpdate": true
+    }
+  }
+}

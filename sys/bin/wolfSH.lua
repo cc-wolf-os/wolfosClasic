@@ -53,7 +53,7 @@ end
 
 local bExit = false
 local sDir = parentShell and parentShell.dir() or ""
-local sPath = parentShell and parentShell.path()..":/sys/bin" or ".:/rom/programs"
+local sPath = parentShell and parentShell.path()..":/sys/bin:/lib" or ".:/rom/programs"
 parentShell.setPath(sPath)
 local tAliases = parentShell and parentShell.aliases() or {}
 local tCompletionInfo = parentShell and parentShell.getCompletionInfo() or {}
@@ -268,5 +268,6 @@ else
         if result == "logout" then
             bExit = true
         end
+
     end
 end

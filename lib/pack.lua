@@ -14,6 +14,7 @@ end,exec=function(self)
     local eventData = { n = 0 }
     while self.running do
         for index, w in ipairs(self.wolves) do
+            w.onResume()
             local ok, param = coroutine.resume(w.r, table.unpack(eventData, 1, eventData.n))
             if not ok then
                 error(param, 0)
@@ -33,5 +34,9 @@ end})
 
 local wolf = class({constructor=function(self,func)
     self.r = coroutine.create(func)
+end,onResume=function(self)
+    
+end,onEnd=function(self)
+    
 end})
 return {pack=pack,wolf=wolf}

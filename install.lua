@@ -27,6 +27,7 @@ if not fs.exists("prime.lua") then
         "selectionBox",
         "textBox",
         "timeout",
+        "drawNft"
     }
     local function get(b)local c,d=http.checkURL(b)if not c then printError(d or"Invalid URL.")return end;write("Connecting to "..b.."... ")local e=http.get(b,nil,true)if not e then print("Failed.")return nil end;print("Success.")local f=e.readAll()e.close()return f or""end
     local res = get("https://raw.githubusercontent.com/MCJack123/PrimeUI/master/util.lua")

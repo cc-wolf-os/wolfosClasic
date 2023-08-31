@@ -1,0 +1,26 @@
+[INFO] 09:26:48: Logger started! Version: 1.1
+[INFO] 09:26:48: Started process /sys/wm/bin/Services/ServiceWorker.lua
+[ERROR] 09:26:48: Process /sys/wm/bin/Services/ServiceWorker.lua ended: 
+[string "in ServiceWor..."]:7: attempt to call field 'getSystemLogger' (a nil value) stack traceback:
+	/sys/wm/bin/wm.lua:232: in function 'getSystemLogger'
+	[string "in ServiceWor..."]:7: in function 'f'
+	/sys/wm/bin/wm.lua:214: in function </sys/wm/bin/wm.lua:184>
+	[C]: in function 'xpcall'
+	/sys/wm/bin/wm.lua:184: in function </sys/wm/bin/wm.lua:179>
+[INFO] 09:26:48: Started process /sys/wm/bin/processStopped.lua
+[INFO] 09:28:25: Started process /sys/wm/bin/shutdown.lua
+[ERROR] 09:28:28: Process /sys/wm/bin/shutdown.lua ended: 
+[string "in Power"]:46: attempt to index field 'wm' (a nil value) stack traceback:
+	/sys/wm/bin/wm.lua:232: in function </sys/wm/bin/wm.lua:230>
+	[string "in Power"]:46: in function 'callback'
+	/sys/lib/ui/button.lua:170: in function 'click'
+	...s/lib/ui/uiManager.lua:47: in function 'fireButtonEvents'
+	...s/lib/ui/uiManager.lua:233: in function 'check'
+	...s/lib/ui/uiManager.lua:245: in function 'v'
+	/sys/lib/events.lua:74: in function 'listen'
+	[string "in Power"]:86: in function 'f'
+	/sys/wm/bin/wm.lua:214: in function </sys/wm/bin/wm.lua:184>
+	[C]: in function 'xpcall'
+	/sys/wm/bin/wm.lua:184: in function </sys/wm/bin/wm.lua:179>
+[INFO] 09:28:28: Started process /sys/wm/bin/processStopped.lua
+[INFO] 14:03:30: Started process /sys/bin/wolfSH.lua

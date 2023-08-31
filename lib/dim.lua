@@ -33,10 +33,10 @@ local file = class({constructor=function(self,F)
         f.seek("set",0)
         textutils.pagedPrint(f.readAll())
     else
-        read()
-        
-        self.sectors = read()
-        read()
+        --read()
+        --
+        --self.sectors = read()
+        --read()
         self.sectTbl = textutils.unserialise(f.readAll())
 
         
@@ -102,9 +102,9 @@ end,save=function(self)
     f.write(68)
     f.write(73)
     f.write(77)
-    f.write(0)
-    f.write(self.sectors)
-    f.write(0)
+    --f.write(0)
+    --f.write(self.sectors)
+    --f.write(0)
     textutils.serialise(self.tbl):gsub(".", function(c)
         f.write(c:byte())
     end)

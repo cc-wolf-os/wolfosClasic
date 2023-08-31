@@ -11,3 +11,9 @@ test
 testOut
 pixelbox_lite.lua
 test.dim
+ccpac/perf.lua
+ccpac/CraftOS.lua
+ccpac/install.lua
+ccpac/index.lua
+ccpac/dim.lua
+dimT.lua

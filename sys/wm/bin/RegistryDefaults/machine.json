@@ -1,0 +1,25 @@
+{
+  "folders": {},
+  "values": {
+    "RegistryVersion": {
+      "type": "number",
+      "value": "3",
+      "overrideOnUpdate": true
+    },
+    "SystemVersionName": {
+      "type": "string",
+      "value": "Alpha Testing",
+      "overrideOnUpdate": true
+    },
+    "SystemVersionDate": {
+      "type": "string",
+      "value": "8/9/2022",
+      "overrideOnUpdate": true
+    },
+    "SystemVersionNumber": {
+      "type": "number",
+      "value": "1",
+      "overrideOnUpdate": true
+    }
+  }
+}
