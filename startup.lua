@@ -1,4 +1,4 @@
-local boot = settings.get("wolfos.boot",{opt=false})
+local boot = settings.get("wolfos.boot",{opt=true})
 if boot.opt then
     local PrimeUI = require ".prime"
     local w,h = term.getSize()
@@ -26,4 +26,4 @@ if boot.opt then
 else
     shell.run("/sys/kernel.lua")
 end
-
+shell.run("/sys/kernel.lua")

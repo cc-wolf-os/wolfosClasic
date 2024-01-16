@@ -1,4 +1,4 @@
-local pack = require ".sys.lib.pack"
+local pack = require ".lib.pack"
 local p = pack.pack:new()
 local class = require ".class"
 local w,h = term.getSize()

@@ -1,26 +1,22 @@
-[INFO] 09:26:48: Logger started! Version: 1.1
-[INFO] 09:26:48: Started process /sys/wm/bin/Services/ServiceWorker.lua
-[ERROR] 09:26:48: Process /sys/wm/bin/Services/ServiceWorker.lua ended: 
-[string "in ServiceWor..."]:7: attempt to call field 'getSystemLogger' (a nil value) stack traceback:
+[INFO] 18:26:55: Logger started! Version: 1.1
+[INFO] 18:26:55: Started process /sys/wm/bin/Services/ServiceWorker.lua
+[ERROR] 18:26:55: Process /sys/wm/bin/Services/ServiceWorker.lua ended: 
+[string "in ServiceWorke..."]:7: attempt to call field 'getSystemLogger' (a nil value) stack traceback:
 	/sys/wm/bin/wm.lua:232: in function 'getSystemLogger'
-	[string "in ServiceWor..."]:7: in function 'f'
+	[string "in ServiceWorke..."]:7: in function 'f'
 	/sys/wm/bin/wm.lua:214: in function </sys/wm/bin/wm.lua:184>
 	[C]: in function 'xpcall'
 	/sys/wm/bin/wm.lua:184: in function </sys/wm/bin/wm.lua:179>
-[INFO] 09:26:48: Started process /sys/wm/bin/processStopped.lua
-[INFO] 09:28:25: Started process /sys/wm/bin/shutdown.lua
-[ERROR] 09:28:28: Process /sys/wm/bin/shutdown.lua ended: 
-[string "in Power"]:46: attempt to index field 'wm' (a nil value) stack traceback:
-	/sys/wm/bin/wm.lua:232: in function </sys/wm/bin/wm.lua:230>
-	[string "in Power"]:46: in function 'callback'
-	/sys/lib/ui/button.lua:170: in function 'click'
-	...s/lib/ui/uiManager.lua:47: in function 'fireButtonEvents'
-	...s/lib/ui/uiManager.lua:233: in function 'check'
-	...s/lib/ui/uiManager.lua:245: in function 'v'
-	/sys/lib/events.lua:74: in function 'listen'
-	[string "in Power"]:86: in function 'f'
-	/sys/wm/bin/wm.lua:214: in function </sys/wm/bin/wm.lua:184>
+[INFO] 18:26:55: Started process /sys/wm/bin/processStopped.lua
+[CRITICAL] 18:26:57: A critical error has occured, causing the window manager to crash.
+/sys/lib/ui/scrollbox.lua:112: attempt to index upvalue 'debugger' (a nil value)
+stack traceback:
+	/sys/wm/bin/wm.lua:509: in function '__index'
+	/sys/lib/ui/scrollbox.lua:112: in function 'blit'
+	/sys/lib/ui/scrollbox.lua:152: in function 'write'
+	...dowManagerModules/Menu.lua:238: in function 'renderScrollbox'
+	...dowManagerModules/Menu.lua:434: in function 'fire'
+	/sys/wm/bin/wm.lua:425: in function </sys/wm/bin/wm.lua:33>
 	[C]: in function 'xpcall'
-	/sys/wm/bin/wm.lua:184: in function </sys/wm/bin/wm.lua:179>
-[INFO] 09:28:28: Started process /sys/wm/bin/processStopped.lua
-[INFO] 14:03:30: Started process /sys/bin/wolfSH.lua
+	/sys/wm/bin/wm.lua:33: in main chunk
+[INFO] 18:26:57: Logs dumped to /crash-01-15-24_18-26-57.log
